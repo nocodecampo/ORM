@@ -25,7 +25,7 @@ try {
 */
 
 // Obtener todas las películas //////////////
-/*
+
 try {
     $peliculas = Film::all();
     foreach ($peliculas as $pelicula) {
@@ -34,7 +34,7 @@ try {
 } catch (Exception $e) {
     echo "Error al obtener películas: " . $e->getMessage();
 };
-*/
+
 
 // Obtener todas las películas en las que ha actuado el actor ID:1 //////////////
 /*
@@ -48,7 +48,7 @@ foreach ($actor->peliculas as $pelicula) {
 */
 
 // Obtener todos los actores que han actuado en ID:1 //////////////
-
+/*
 $pelicula = Film::find(3);
 
 echo "🎬 Actores que actúan en {$pelicula->title}:<hr>";
@@ -56,7 +56,7 @@ echo "🎬 Actores que actúan en {$pelicula->title}:<hr>";
 foreach ($pelicula->actores as $actor) {
     echo "{$actor->actor_id}-{$actor->first_name} {$actor->last_name}<br>";
 }
-
+*/
 
 // Agregar una Relación entre un Actor y una Película
 /*
